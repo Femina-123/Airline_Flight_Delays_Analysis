@@ -16,41 +16,72 @@ cancellations.
 - Format: Monthly subsets, consolidated annually, processed using csvkit, Python, 
 and Excel.
 
+
 ### Data Profile:
 There are 3000000 rows and 32 columns in the dataset.
 Variables with description:
--o FL_DATE: Flight date
--o AIRLINE: Airline code
--o AIRLINE_DOT: Airline DOT code
--o AIRLINE_CODE: Airline code (alternative)
--o DOT_CODE: Department of Transportation code
--o FL_NUMBER: Flight number
--o ORIGIN: Origin airport code
--o ORIGIN_CITY: Origin city name
--o DEST: Destination airport code
--o DEST_CITY: Destination city name
--o CRS_DEP_TIME: Scheduled departure time
--o DEP_TIME: Actual departure time
--o DEP_DELAY: Departure delay in minutes
--o TAXI_OUT: Taxi out time in minutes
--o WHEELS_OFF: Wheels off time
--o WHEELS_ON: Wheels on time
--o TAXI_IN: Taxi in time in minutes
--o CRS_ARR_TIME: Scheduled arrival time
--o ARR_TIME: Actual arrival time
--o ARR_DELAY: Arrival delay in minutes
--o CANCELLED: Cancellation indicator
--o CANCELLATION_CODE: Cancellation code
--o DIVERTED: Diversion indicator
--o CRS_ELAPSED_TIME: Scheduled elapsed time
--o ELAPSED_TIME: Actual elapsed time
--o AIR_TIME: Air time in minutes
--o DISTANCE: Distance between airports in miles
--o DELAY_DUE_CARRIER: Delay due to carrier in minutes
--o DELAY_DUE_WEATHER: Delay due to weather in minutes
--o DELAY_DUE_NAS: Delay due to National Airspace System in minutes
--o DELAY_DUE_SECURITY: Delay due to security in minutes
--o DELAY_DUE_LATE_AIRCRAFT: Delay due to late aircraft in minutes
+- FL_DATE: Flight date
+- AIRLINE: Airline code
+- AIRLINE_DOT: Airline DOT code
+- AIRLINE_CODE: Airline code (alternative)
+- DOT_CODE: Department of Transportation code
+- FL_NUMBER: Flight number
+- ORIGIN: Origin airport code
+- ORIGIN_CITY: Origin city name
+- DEST: Destination airport code
+- DEST_CITY: Destination city name
+- CRS_DEP_TIME: Scheduled departure time
+- DEP_TIME: Actual departure time
+- DEP_DELAY: Departure delay in minutes
+- TAXI_OUT: Taxi out time in minutes
+- WHEELS_OFF: Wheels off time
+- WHEELS_ON: Wheels on time
+- TAXI_IN: Taxi in time in minutes
+- CRS_ARR_TIME: Scheduled arrival time
+- ARR_TIME: Actual arrival time
+- ARR_DELAY: Arrival delay in minutes
+- CANCELLED: Cancellation indicator
+- CANCELLATION_CODE: Cancellation code
+- DIVERTED: Diversion indicator
+- CRS_ELAPSED_TIME: Scheduled elapsed time
+- ELAPSED_TIME: Actual elapsed time
+- AIR_TIME: Air time in minutes
+- DISTANCE: Distance between airports in miles
+- DELAY_DUE_CARRIER: Delay due to carrier in minutes
+- DELAY_DUE_WEATHER: Delay due to weather in minutes
+- DELAY_DUE_NAS: Delay due to National Airspace System in minutes
+- DELAY_DUE_SECURITY: Delay due to security in minutes
+- DELAY_DUE_LATE_AIRCRAFT: Delay due to late aircraft in minutes
+
+### Project Structure:
+Here’s a breakdown of scripts:
+1.Data Sourcing and Preparation:
+- Source and clean flight delay data from the US Department of Transportation.
+- Define key questions for analysis.
+- Document initial data cleaning and preparation steps.
+
+2.Exploratory Analysis:
+- Conduct exploratory visual analysis using Python.
+- Define and test hypotheses based on initial data insights.
+
+3.Geospatial Analysis:
+- Source shapefiles for geographic data.
+- Merge and clean location data with flight delay data.
+- Create a choropleth map to analyze delays across different regions.
+
+4.Supervised Machine Learning:
+- Formulate a hypothesis for regression analysis.
+- Select and prepare variables for linear regression.
+- Split data into training and test sets, run the regression, and evaluate model performance.
+
+5.Unsupervised Machine Learning:
+- Prepare data for cluster analysis.
+- Use the elbow method to determine the optimal number of clusters.
+- Run k-means clustering, visualize clusters, and analyze descriptive statistics.
+
+6.Time Series Analysis:
+- Source relevant time-series data via an API.
+- Visualize and decompose time series data, test for stationarity, and apply differencing as needed.
 
 
 ### [Link to Tableau Storyboard](https://public.tableau.com/app/profile/femina.kallangadan/viz/flightdelayanalysis_17235940914290/nextstep?publish=yes)
