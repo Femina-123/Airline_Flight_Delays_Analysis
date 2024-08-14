@@ -55,6 +55,7 @@ Variables with description:
 
 ### Project Structure:
 Here’s a breakdown of scripts:
+
 1.Data Sourcing and Preparation:
 - Source and clean flight delay data from the US Department of Transportation.
 - Define key questions for analysis.
