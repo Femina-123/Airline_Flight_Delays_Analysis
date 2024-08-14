@@ -7,13 +7,13 @@ delay factors (such as weather, carrier issues, and late aircraft) and overall d
 and policymakers, develop strategies to minimize delays, improve operational efficiency, and enhance passenger satisfaction.
 
 ### Data Source:
--• Provider: US Department of Transportation, Bureau of Transportation Statistics
--• URL: DOT On-Time Performance
--• Content: Contains data on flight delays and cancellations for domestic flights in the 
+- Provider: US Department of Transportation, Bureau of Transportation Statistics
+- URL: DOT On-Time Performance
+- Content: Contains data on flight delays and cancellations for domestic flights in the 
 US, covering flight routes, time ranges for events, and reasons for delays and 
 cancellations.
--• Time Period: January 2019 – August 2023
--• Format: Monthly subsets, consolidated annually, processed using csvkit, Python, 
+- Time Period: January 2019 – August 2023
+- Format: Monthly subsets, consolidated annually, processed using csvkit, Python, 
 and Excel.
 
 ### Data Profile:
