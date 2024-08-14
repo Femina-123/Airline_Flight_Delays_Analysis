@@ -1,4 +1,4 @@
-## Flight DElay Analysis
+## Flight Delay Analysis
 
 ### Objective:
 The primary objective of this analysis is to explore, analyze, and identify key factors contributing to flight delays across the United States from 2019 to 2023.
